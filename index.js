@@ -47,7 +47,7 @@ function sendMessage() {
 		'X-RapidAPI-Host': 'chatgpt-42.p.rapidapi.com'
 	},
        
-        body: {"messages":[{"role":"user","content":"${message}"}]}
+        body: `{"messages":[{"role":"user","content":"${message}"}]}`
         // if you want use official api you need have this body
         // `{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"${message}"}]}`
     };
